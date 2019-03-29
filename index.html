@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FIXINGRadioButtonsUIComponent</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+  <link type="text/css" rel='stylesheet' href="css/bootstrap.min.css" />
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.0.1/color-thief.min.js"></script>
+  <script src="dist/DistLibLegacy.js"></script>
+  <script src="dist/DistLibBundle.js"></script>
+
+  <script src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <style>
+    @font-face {
+      font-family: 'Montserrat-Regular';
+      src: local('Montserrat-Regular'), url('./fonts/Montserrat-Regular.ttf') format('truetype');
+    }
+
+  </style>
+  <!-- 229964-191207-702488-613232 -->
+
+</head>
+
+<body class="HTML5-deploy-wrapper">
+
+  <div id="j_161" class="snapp-html5 rotatable element fc Screen" overlay-color="rgba(255,255,255,0.75)" spinner-url="" obj-name="RadioButtonsScreen" style="background-color: rgb(255, 255, 255); width: 375px; height: 667px; transform: translate(170px, 100px) rotate(0deg);">
+    <div class="screen-container"><img src="" crossorigin="anonymous"></div>
+    <div id="j_162" class="snapp-html5 rotatable element fc Label" obj-name="TitleRadioScn" style="background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 302px; height: 40px; transform: translate(40px, 21px) rotate(0deg);">
+      <div class="label-wrapper">
+        <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Radio buttons layout" fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 302px; text-overflow: clip; height: 40px; padding: inherit;">Radio&nbsp;buttons&nbsp;layout</div>
+      </div>
+    </div>
+    <div id="j_163" class="snapp-html5 rotatable element fc Container" obj-name="RadioButtonsInput" style="opacity: 1; background-color: rgba(247, 247, 247, 0); overflow: hidden; width: 344px; height: 406px; transform: translate(16px, 82px) rotate(0deg);">
+      <div class="container"></div>
+      <div id="j_164" class="snapp-html5 rotatable element fc Label" obj-name="RadioLabel" original-width="299" style="background-color: rgba(219, 168, 168, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 70px; transform: translate(0px, 0px); top: 0px; left: 20px; right: 25px;">
+        <div class="label-wrapper">
+          <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Rich Text" fontstyle="normal" style="white-space: unset; font-size: 17px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 299px; text-overflow: clip; height: 70px; padding: inherit; font-family: Montserrat-Regular;">Question</div>
+        </div>
+      </div>
+      <div id="j_165" class="rotatable element fc ListView" show-scroll="when scroll" obj-name="RadioButtons" original-width="316" style="opacity: 1; background-color: rgba(255, 255, 255, 0); border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 351px; transform: translate(0px, 0px); top: 60px; left: 25px; right: 3px;">
+        <div class="ListView"></div>
+        <div id="j_166" class="rotatable element fc ListViewCell" cell-highlight="NO" cell-highlight-color="#ffffff" cell-bg-color="rgba(255, 255, 255, 0)" obj-name="RadioBtnElement" style="opacity: 1; background-color: rgba(255, 255, 255, 0); width: 316px; height: 55px; transform: translate(0px, 0px) rotate(0deg);">
+          <div class="ListViewCell"></div>
+          <div id="j_167" class="snapp-html5 rotatable element fc Image" obj-name="RadioIcon" style="opacity: 1; background-color: rgba(255, 255, 255, 0); width: 25px; height: 25px; transform: translate(0px, 0px); left: 20px; top: 12px;"><img src="./img/unchecked.png" crossorigin="anonymous" onmousedown="return false;" scale-type="stretch" style="width: inherit; height: inherit; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+          <div
+            id="j_168" class="snapp-html5 rotatable element fc Label" obj-name="RadioOption" original-height="38" style="background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 212px; height: auto; transform: translate(0px, 0px); top: 7px; left: 65px; bottom: 10px;">
+            <div class="label-wrapper">
+              <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Option" fontstyle="normal" style="font-size: 14px; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 212px; text-overflow: clip; height: 38px; padding: inherit; font-family: Montserrat-Regular;">Option</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="j_169" class="snapp-html5 rotatable element fc Label" obj-name="ErrorMsg" original-width="334" style="background-color: rgba(255, 255, 255, 0); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: auto; height: 40px; transform: translate(0px, 0px); bottom: 0px; left: 10px; right: 0px;">
+      <div class="label-wrapper">
+        <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Error" fontstyle="normal" style="font-size: 12px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(240, 45, 45); text-align: center; vertical-align: middle; overflow: hidden; max-width: 334px; text-overflow: clip; height: 40px; padding: inherit;">Error</div>
+      </div>
+    </div>
+  </div>
+  <div id="j_170" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" obj-name="Button" style="border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 80px; height: 40px; transform: translate(35px, 523px) rotate(0deg);">
+    <div type="button" class="html5 btn system" fontstyle="normal" style="opacity: 1; background-color: rgb(51, 181, 229); text-align: center; justify-content: center; font-family: Arial; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(255, 255, 255); text-decoration: none;">
+      <div class="img-container" style="display: none;">
+        <img class="foreground" src="" crossorigin="anonymous">
+
+      </div>
+      <span class="text">GET</span>
+    </div>
+  </div>
+  <div id="j_171" class="snapp-html5 rotatable element fc Label" obj-name="Label" style="background-color: rgb(255, 255, 255); opacity: 1; border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; width: 80px; height: 40px; transform: translate(201px, 522px) rotate(0deg);">
+    <div class="label-wrapper">
+      <div class="label wordwrap" id="cklabel" contenteditable="false" textformat="Plain Text" plain_text="Label" fontstyle="normal" style="font-size: 14px; font-family: Arial; font-style: normal; font-weight: normal; color: rgb(0, 0, 0); text-align: left; vertical-align: middle; overflow: hidden; max-width: 80px; text-overflow: clip; height: 40px; padding: inherit;">Label</div>
+    </div>
+  </div>
+  <div id="j_172" class="snapp-html5 rotatable element fc Button" shadow-h-offset="0px" shadow-v-offset="0px" shadow-blur="0px" shadow-spread="0px" shadow-color="rgba(255,255,255,0)" obj-name="Button2" style="border-color: rgba(255, 255, 255, 0); border-width: 0px; border-radius: 0px; border-style: solid; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; width: 166px; height: 40px; transform: translate(140px, 586px) rotate(0deg);">
+    <div type="button" class="html5 btn system" fontstyle="normal" style="opacity: 1; background-color: rgb(51, 181, 229); text-align: center; justify-content: center; font-family: Arial; font-size: 14px; font-style: normal; font-weight: normal; color: rgb(255, 255, 255); text-decoration: none;">
+      <div class="img-container" style="display: none;">
+        <img class="foreground" src="" crossorigin="anonymous">
+
+      </div>
+      <span class="text">Reset values</span>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
